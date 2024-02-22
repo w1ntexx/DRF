@@ -51,8 +51,7 @@ urlpatterns = [
             "is_published": true,
             "cat_id": 1
         },
-            ...
-            ]
+    ]
 }
 ```
 
