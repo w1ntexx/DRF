@@ -26,7 +26,7 @@ urlpatterns = [
     path('api/v1/womenlist/', WomenApiView.as_view())
 ]
 ```
-<br />
+
 
 ### Создадим API-запрос посложнее
 ```python
@@ -38,7 +38,6 @@ urlpatterns = [
 ```
 
 ### Ответ
-<!-- <div style="max-height: 200px; overflow-y: auto;"> -->
 
 ```json
 {
@@ -53,6 +52,7 @@ urlpatterns = [
             "cat_id": 1
         },
             ...
+            ]
 }
 ```
 
@@ -77,7 +77,7 @@ urlpatterns = [
 {
     "title": "Timofey",
     "content": "Timofey Makarov",
-    "cat_id": 2
+    "cat_id": 2,
 }
 ```
 
