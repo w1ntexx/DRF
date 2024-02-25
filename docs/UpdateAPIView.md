@@ -9,7 +9,7 @@ class WomenAPIUpdate(generics.UpdateApiView):
 
 > в UpdateApiView можно использовать только PUT, PATH-запросы
 
-queryset - **ленивый вопрос**, выполняется, как только нужны какие-то определенные данные
+queryset - **ленивый запрос**, выполняется, как только нужны какие-то определенные данные
 
 ```python
 urlpatterns = [
