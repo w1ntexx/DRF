@@ -1,9 +1,13 @@
 from rest_framework.response import Response
 from rest_framework.views import APIView
-
+from rest_framework import generics 
 from .models import Women
 from .serializers import WomenSerializer
 
+
+class WomenAPIList(generics.ListCreateAPIView):
+    queryset = Women.objects.all()
+    serializer_class = WomenSerializer
 
 class WomenApiView(APIView):
     def get(self, request): 
