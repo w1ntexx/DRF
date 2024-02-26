@@ -11,11 +11,6 @@ router.urls = ['api/v1/women/', 'api/v1/women/pk/', 'api/v1/']
 Только в **DefaultRouter** есть url-маршрут `'api/v1/'`, если мы перейдем на него получим
 
 ```json
-HTTP 200 OK
-Allow: GET, HEAD, OPTIONS
-Content-Type: application/json
-Vary: Accept
-
 {
     "women": "http://127.0.0.1:8000/api/v1/women/"
 }
