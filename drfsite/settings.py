@@ -31,7 +31,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'rest_framework',
     'django_extensions',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -40,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'women.apps.WomenConfig',
+    'rest_framework',
+    'rest_framework.authtoken',
+    'djoser',
 ]
 
 MIDDLEWARE = [
@@ -134,5 +136,11 @@ REST_FRAMEWORK = {
     'DEFAULT_RENDER_CLASSES': [
         'rest_framework.renderers.JSONRender',
         'rest_framework.renderers.BrowsableAPIRender',
+    ],
+    
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
     ]
 }
